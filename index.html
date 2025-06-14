@@ -59,7 +59,7 @@
     <!-- 랜딩 css -->
         <link rel="stylesheet" href="theme/hanchon/css/landing/landing.pc88e9.css">
     <link rel="stylesheet" href="theme/hanchon/css/landing/inc.store88e9.css">
-    
+
 <!--[if lte IE 8]>
 <script src="http://test2.kwebsite.kr/js/html5.js"></script>
 <![endif]-->
@@ -99,6 +99,11 @@ var g5_shop_url = "shop/index.html";
 <script src="js/commonb519.js"></script>
 <script src="js/wrestb519.js"></script>
 <script src="js/placeholders.minb519.js"></script>
+<style>
+#main-sec .tt-wrap .tt.fc-wh {
+    transition: transform 0.5s ease-out;
+}
+</style>
 </head>
 <body            data-aos-easing="ease" data-aos-duration="400" data-aos-delay="100" data-aos-offset="500"
     >
@@ -736,7 +741,7 @@ $(function() {
                 </div>
             </div>
 
-   
+
            <div class="cont cont2">
                 <div class="rolling-content flex flex-jl flex-ac"><!--wh-outline-->
                     <div class="rolling-wrap flex flex-ac" >
@@ -2189,14 +2194,26 @@ $(function() {
 
 
         <script src="theme/hanchon/js/landing/custom_pc705d.js?v=202025-06-06%2019:07:59"></script>
-        
+
 <!-- Smartlog -->
 <script type="text/javascript">
         var hpt_info={'_account':'UHPT-18529', '_server': 'a23'};
     </script>
     <script language="javascript" src="../cdn.smlog.co.kr/core/smart.js" charset="utf-8"></script>
     <noscript><img src="http://a23.smlog.co.kr/smart_bda.php?_account=18529" style="display:none;width:0;height:0;" border="0"/></noscript>
-
+<script>
+  window.addEventListener('wheel', function(event) {
+    if (event.deltaY > 0) {
+      console.log('Scrolled down');
+      const targetElement = document.querySelector('section#main-sec .tt-wrap h3.tt.fc-wh');
+      if (targetElement) {
+        targetElement.style.transform = 'translateY(-60px)';
+      } else {
+        console.log('Target element not found.');
+      }
+    }
+  });
+</script>
 </body>
 
 
