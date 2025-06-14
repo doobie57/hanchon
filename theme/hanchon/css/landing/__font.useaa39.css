@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/*GmarketSans*/
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RiaSans-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WavvePADO-Regular';
+    /*src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');*/
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FlightSans-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'esamanruMedium';
+    /*src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');*/
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    /*src: url('https://github.com/projectnoonnu/noonfonts_20-10/blob/main/GongGothicMedium.woff') format('woff');*/
+    /*src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Gonggames/GongGothicMedium.woff') format('woff');*/
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'esamanruBold';
+    /*src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');*/
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+    /*src: url('https://github.com/projectnoonnu/noonfonts_20-10/blob/main/GongGothicBold.woff') format('woff');*/
+    /*src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Gonggames/GongGothicBold.woff') format('woff');*/
+    font-weight: normal;
+    font-style: normal;
+}
+/*@font-face {*/
+/*    font-family: 'FlightSans-Title';*/
+/*    src:*/
+/*            url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Title.woff2') format('woff2'),*/
+/*            url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Title.woff')  format('woff');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+@font-face {
+    font-family: 'FlightSans-Title';
+    src:
+        /* 최신 브라우저용 WOFF2 */
+            url('../../font/FlightSans-Title.html') format('woff2'),
+                /* 하위 호환용 WOFF */
+            url('../../font/FlightSans-Title.woff')  format('woff'),
+                /* 시스템 폴백용 TTF */
+            url('../../font/FlightSans-Title.ttf')   format('truetype'),
+                /* IE 구버전용 EOT */
+            url('../../font/FlightSans-Titled41d.eot?#iefix') format('embedded-opentype'),
+                /* OTF 지원 브라우저용 */
+            url('../../font/FlightSansOTF-Title.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@supports (-webkit-overflow-scrolling: touch) {
+    @font-face {
+        font-family: 'FlightSans-Title';
+        /* iOS에서는 TTF를 먼저, 그 외는 기존 순서 유지 */
+        src:
+            /* iOS Safari/WebView 전용 — 힌팅 좋은 TTF 우선 */
+                url('../../font/FlightSans-Title.ttf')    format('truetype'),
+                    /* 그 뒤에 나머지 포맷들 */
+                url('../../font/FlightSans-Title.html') format('woff2'),
+                url('../../font/FlightSans-Title.woff')  format('woff'),
+                url('../../fonts/FlightSans-Title.html'),
+                url('../../font/FlightSans-Titled41d.eot?#iefix') format('embedded-opentype'),
+                url('../../font/FlightSansOTF-Title.otf')     format('opentype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', 'Noto Sans KR',sans-serif;
+}
+.nanumsq {
+    font-family: 'NanumSquare', 'Noto Sans KR',sans-serif;
+}
+.nanumsqB {
+    font-family: 'NanumSquare', 'Noto Sans KR',sans-serif;
+    font-weight:800;
+}
+.ft-pretendard {
+    font-family: "Pretendard Variable", Pretendard, 'Noto Sans KR',sans-serif;
+}
+.notosanskr {
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.montserrat {
+    font-family: 'Montserrat', 'Noto Sans KR',sans-serif;
+}
+.notoserifkr {
+    font-family: 'Noto Serif KR', 'Noto Sans KR',serif;
+}
+.notoserifkrB {
+    font-family: 'Noto Serif KR', 'Noto Sans KR',serif;
+    font-weight: 600;
+}
+.paperlogy {
+    font-family: 'Paperlogy', 'Noto Serif KR', 'Noto Sans KR',serif;
+}
+.paperlogyBold {
+    font-family: 'Paperlogy-8ExtraBold', 'Noto Serif KR', 'Noto Sans KR',serif;
+    font-weight: 600;
+}
+.calistoMT {
+    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+}
+.ft-ria {
+    'RiaSans-ExtraBold', 'Noto Serif KR', 'Noto Sans KR',serif;
+}
+.gmarketSans {
+    font-family: 'GmarketSans', 'Noto Serif KR', 'Noto Sans KR',serif;
+}
+.gmarketSansM {
+    font-family: 'GmarketSans', 'Noto Serif KR', 'Noto Sans KR',serif;
+    font-weight: 600;
+}
+.ft-ynsdL {
+    font-family: "yeonaesidae", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.ft-ynsdR {
+    font-family: "yeonaesidae", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ft-ynsdB {
+    font-family: "yeonaesidae", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ft-bitter {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight:200;
+    font-style: normal;
+}
+.ft-bitter-italic {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight:200;
+    font-style: italic;
+}
+.ft-wave {
+    font-family: 'WavvePADO-Regular', sans-serif;
+}
+.ft-flight-sans {
+    font-family: 'FlightSans-Bold','Noto Sans KR',serif;
+}
+.ft-esamanruM {
+    font-family: 'esamanruMedium','Noto Sans KR',serif;
+}
+.ft-flight-title {
+    font-family: 'FlightSans-Title', 'FlightSans-Bold','Noto Sans KR',serif;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+}
+
